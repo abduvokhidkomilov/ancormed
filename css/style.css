@@ -1,0 +1,307 @@
+/* fonts  */
+@font-face {
+    font-family: 'Open Sans-700';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed-700';
+    src: url('../fonts/OpenSansCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSansCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans-400';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* global styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans-400';
+    font-size: 17px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* header */
+.site-header {
+    height: 50px;
+    margin: 24px 0px;
+}
+.site-logo {
+    display: block;
+}
+.logo-ancer:active {
+    opacity: 0.69;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-nav {
+}
+.site-item {
+    display: flex;
+}
+.site-list:not(:last-child) {
+    margin-right: 32px;
+}
+.site-link {
+    font-family: 'Open Sans-700';
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #222222;
+
+}
+.site-link:hover {
+    color: rgba(222, 46, 84,0.8);
+}
+.site-link:active {
+    opacity: 0.6;
+}
+.qabul-yozilish {
+    font-family: 'Open Sans-700';
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #DE2E54;
+    padding: 12px 24px;
+    background: #FFFFFF;
+    border: 2px solid #DE2E54;
+    border-radius: 8px;
+}
+.qabul-yozilish:hover {
+    background-color:#DE2E54;
+    color: #fff;
+    border-color: #fff;
+}
+
+
+/* main */
+main {
+    flex-grow: 1;
+}
+.hero {
+    height: 533px;
+    margin-bottom: 120px;
+    background-color: #0EB4C1;
+}
+.site-main .container {
+    display: flex;
+    align-items: center;
+    gap: 177px;
+}
+.hero-about {
+    width: 500px;
+}
+.h-title {
+    color: #fff;
+    font-family: 'Open Sans Condensed-700';
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.h-text {
+    font-family: 'Open Sans-400';
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 48px;
+}
+.h-btn {
+    padding: 12px 24px;
+    background: rgba(222, 46, 84, 0.8);
+    border-radius: 8px;
+     font-family: 'Open Sans Condensed-700';
+     border: 2px solid rgba(222, 46, 84);
+     font-size: 15px;
+     line-height: 1.5;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+     color: #FFFFFF;
+}
+.h-img {
+    width: 423px;
+    height: 533px;
+    background-image:url(../img/hero-img.png);
+    background-position:bottom ;
+    background-repeat: no-repeat;
+    
+}
+/* section two */
+.sevice {
+    width: 100%;
+    height: 1486px;
+}
+.s-container {
+   display: flex;
+   justify-content: center;
+}
+.ser-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+.services-all {
+}
+.ser-list {
+}
+.ser-item {
+    display: flex;
+    gap: 64px;
+    margin-bottom: 80px;
+    
+}
+.hijoma-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url(../img/hijoma.png);
+}
+.xizmatlar {
+    width: 600px;
+
+}
+.x-title {
+    margin-top: 15px;
+    margin-bottom: 24px;
+    font-family: 'Open Sans Condensed-700';
+    font-size: 24px;
+    line-height: 1.2;
+    color: #222222;
+}
+.x-text {
+    font-family: 'Open Sans-400';
+    font-size: 16px;
+    line-height: 150%;
+    color: #444444;
+}
+.terapiya-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url(../img/manualterapiya.png);
+
+
+}
+
+.zuluk-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background-image: url(../img/zuluk.png);
+
+}
+
+.tabiiy-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    margin-bottom: 60px;
+    background-image: url(../img/tabiiy.png);
+
+}
+.ser-btn {
+    display: flex;
+    justify-content: center;
+}
+
+/* section fo */
+.signup {
+    height: 253px;
+    width: 100%;
+    background-color: #0EB4C1;
+}
+.signup .container {
+    display: flex;
+    flex-direction: column;
+    
+}
+.sign {
+ 
+}
+.sign-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.tarmoq {
+    display: flex;
+    justify-content: center;
+    gap: 88px;
+}
+.tel {
+    padding: 12px 24px;
+
+}
+.tel:hover {
+    background-color: #fff;
+    color: #DE2E54;
+}
+.tel:active {
+    opacity: 0.7;
+}
+.tg {
+    padding: 12px 24px;
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.tg:active {
+    opacity: 0.7;
+}
+
+/* footer */
+.site-footer {
+    background-color:#222222;
+}
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:24px 0px;
+}
+.site-footer a {
+    color: white;
+}
